@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] h-screen flex items-center justify-center ">
+    
+    <div x-data="{ open: false }" class="h-screen flex flex-col">
+
+        <header>
+            <nav x-data class="items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6">
+                <a href="index.html" class="flex-shrink-0 flex">
+                    <img src="img/logo.png" width="40" height="50" alt="Logo"/>
+                    <h2 class="text-white font-semibold text-xl">AnD_C { Dev.login }</h2>
+                </a>
+                <ul class="py-4 flex-1 items-center flex space-x-3 sm:space-x-6 sm:justify-end">
+                    <template x-for="(item, idx) in navigation" :key="idx">
+                        <li class="text-gray-200">
+                            <a :href="item.path" x-text="item.title"></a>
+                        </li>
+                    </template>
+                    <li>
+                        <a href="login.php" class="flex items-center text-gray-200">
+                            Iniciar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="mt-24 mx-auto max-w-screen-xl pb-12 px-4 items-center lg:flex md:px-8">
+            <div class="space-y-4 flex-1 sm:text-center lg:text-left">
+                <h1 class="text-white font-bold text-4xl xl:text-5xl">
+                    Te doy la bienvanida a
+                    <span class="text-indigo-400"> AnD_C { Dev.login }</span>
+                </h1>
+                <p class="text-gray-300 max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                </p>
+                <div class="pt-10 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start">
+                    <a href="login.php" class="px-7 py-3 w-full bg-white text-gray-800 text-center rounded-md shadow-md block sm:w-auto">
+                        Iniciar Sesión
+                    </a>
+                    <a href="register.php" class="px-7 py-3 w-full bg-gray-700 text-gray-200 text-center rounded-md block sm:w-auto">
+                        Reguistrarse
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 text-center mt-7 lg:mt-0 lg:ml-3">
+                <img src="https://i.postimg.cc/HxHyt53c/undraw-heatmap-uyye.png" class="w-full mx-auto sm:w-10/12 lg:w-full" />
+            </div>
+        </section>
+    </div>
+</body>
+</html>
