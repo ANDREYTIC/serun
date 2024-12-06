@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     error_log("Email ingresado: " . $email);
 
     // Preparamos la consulta para evitar inyecciones SQL
-    $stmt = $pdo->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt = $pdo->prepare("SELECT * FROM datos_usuario WHERE email = ?");
     $stmt->execute([$email]);
     $user = $stmt->fetch();
 

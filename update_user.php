@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    $stmt = $pdo->prepare("UPDATE users SET email = ?, nombres = ?, apellidos = ?, username = ?, edad = ? WHERE id = ?");
+    $stmt = $pdo->prepare("UPDATE datos_usuario SET email = ?, nombres = ?, apellidos = ?, username = ?, edad = ? WHERE id = ?");
     
     try {
         $stmt->execute([$email, $nombres, $apellidos, $username, $edad, $_SESSION['user_id']]);

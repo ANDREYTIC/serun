@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <!--  nombre de la página -->
+    <title>Reguistro | AnD_C</title>
+
+        <!-- icono del sitio-->
+    <link rel="icon" type="image/png" href="/img/logo.png" sizes="32x32">
+
+    <!-- estilos css-->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 

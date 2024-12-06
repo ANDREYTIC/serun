@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] !== 'admin') {
 if (isset($_GET['id'])) {
     $user_id = $_GET['id'];
 
-    $stmt = $pdo->prepare("DELETE FROM users WHERE id = ?");
+    $stmt = $pdo->prepare("DELETE FROM datos_usuario WHERE id = ?");
     
     try {
         $stmt->execute([$user_id]);

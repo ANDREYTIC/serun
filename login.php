@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
+
+    <!--  nombre de la página -->
+    <title>Iniciar Sesión | AnD_C</title>
+
+    <!-- icono del sitio-->
+    <link rel="icon" type="image/png" href="/img/logo.png" sizes="32x32">
+    
+    <title></title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] h-screen flex items-center justify-center">
@@ -33,6 +40,7 @@
         <?php endif; ?>
 
         <form action="login_process.php" method="POST" class="space-y-4">
+            
             <!-- Campo de Email -->
             <div class="pb-2">
                 <label for="email" class="block mb-2 text-base font-medium text-[#87CEFA]">Email</label>

@@ -24,7 +24,7 @@ CREATE TABLE datos_usuario (
     edad INT NOT NULL,
     password VARCHAR(255) NOT NULL,
     role ENUM('user', 'admin') DEFAULT 'user'
-);
+)
 
 -- Insertar un usuario administrador de ejemplo
 UPDATE where datos_usuario (email, nombres, apellidos, username, edad, password, nivel)
